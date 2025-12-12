@@ -1,0 +1,91 @@
+\section{Результаты}
+
+В результате работы была разработана система динамических библиотек и две тестовые программы, демонстрирующие разные подходы к использованию библиотек. Программа успешно функционирует в операционной системе Windows и может быть адаптирована для Unix-систем.
+
+\subsection{Ключевые особенности реализации}
+
+\begin{itemize}
+    \item \textbf{Две динамические библиотеки:} Созданы библиотеки mathlib1.dll и mathlib2.dll с различными реализациями одинаковых контрактов
+    \item \textbf{Корректная экспорт/импорт функций:} Использование \texttt{\_\_declspec(dllexport)} и \texttt{extern "C"} для обеспечения совместимости
+    \item \textbf{Два метода использования библиотек:}
+    \begin{itemize}
+        \item Статическая линковка на этапе компиляции (программа №1)
+        \item Динамическая загрузка во время выполнения (программа №2)
+    \end{itemize}
+    \item \textbf{Единый интерфейс пользователя:} Обе программы поддерживают одинаковый набор команд (0, 1, 2, help, quit)
+    \item \textbf{Переключение реализаций:} Программа №2 позволяет переключаться между библиотеками без перекомпиляции
+    \item \textbf{Обработка ошибок:} Проверка корректности входных данных, загрузки библиотек и доступности функций.
+\end{itemize}
+
+\subsection{Пример работы программы}
+
+\begin{verbatim}
+PS D:\MAI-year2\os\os_lab4\build> bin/program1.exe
+
+=== Program 1: Static Linking ===
+Library linked at COMPILE TIME
+Commands:
+  0 - Show info about current implementation
+  1 A B - Count primes between A and B
+  2 A B - Calculate area with sides A and B
+  help - Show this help
+  quit - Exit program
+
+> 1 35 92
+PrimeCount(35, 92) = 13
+
+> 2 5 16
+Square(5, 16) = 80
+
+> quit
+Goodbye!
+PS D:\MAI-year2\os\os_lab4\build> bin/program2.exe
+Successfully loaded Library 1 by default
+
+=== Program 2: Dynamic Loading ===
+Libraries loaded at RUNTIME
+Current library: Library 1
+Commands:
+  0 - Switch between Library 1 and Library 2
+  1 A B - Count primes between A and B
+  2 A B - Calculate area with sides A and B
+  help - Show this help
+  quit - Exit program
+
+[Lib1] > 1 24 89
+PrimeCount(24, 89) = 15
+
+[Lib1] > 2 4 20
+Square(4, 20) = 80
+
+[Lib1] > 0
+Switched to Library 2
+  PrimeCount: Sieve of Eratosthenes
+  Square: Right triangle area (A × B / 2)
+
+[Lib2] > 1 24 89
+PrimeCount(24, 89) = 15
+
+[Lib2] > 2 4 20
+Square(4, 20) = 40
+
+[Lib2] > quit
+Goodbye!
+\end{verbatim}
+
+\subsection{Производительность}
+
+\begin{itemize}
+    \item \textbf{Время загрузки:} Программа №1 запускается быстрее, так как библиотека уже залинкована
+    \item \textbf{Время выполнения функций:} Одинаково для обоих методов после загрузки библиотеки
+    \item \textbf{Потребление памяти:}
+    \begin{itemize}
+        \item Программа №1: больше памяти (код библиотеки в процессе)
+        \item Программа №2: меньше памяти (библиотека загружается при необходимости)
+    \end{itemize}
+    \item \textbf{Алгоритмическая эффективность:}
+    \begin{itemize}
+        \item Библиотека 1: O(n²) для PrimeCount, подходит для небольших n
+        \item Библиотека 2: O(n log log n) для PrimeCount, эффективна для больших n
+    \end{itemize}
+\end{itemize}

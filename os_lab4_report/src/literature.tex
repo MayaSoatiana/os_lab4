@@ -1,0 +1,788 @@
+\section{Исходная программа}
+
+\begin{center}
+\lstinputlisting[language=C++,caption=*prime.h*,captionpos=b]{inc/include/prime.h}
+\end{center}
+
+\begin{center}
+\lstinputlisting[language=C++,caption=*square.h*,captionpos=b]{inc/include/square.h}
+\end{center}
+
+\begin{center}
+\lstinputlisting[language=C++,caption=*prime\_1.cpp*,captionpos=b]{inc/lib\_1/prime\_1.cpp}
+\end{center}
+
+\begin{center}
+\lstinputlisting[language=C++,caption=*square\_1.cpp*,captionpos=b]{inc/lib\_1/square\_1.cpp}
+\end{center}
+
+\begin{center}
+\lstinputlisting[language=C++,caption=*prime\_2.cpp*,captionpos=b]{inc/lib\_2/prime\_2.cpp}
+\end{center}
+
+\begin{center}
+\lstinputlisting[language=C++,caption=*square\_2.cpp*,captionpos=b]{inc/lib\_2/square\_2.cpp}
+\end{center}
+
+\begin{center}
+\lstinputlisting[language=C++,caption=*program1/main.cpp*,captionpos=b]{inc/program1/main.cpp}
+\end{center}
+
+\begin{center}
+\lstinputlisting[language=C++,caption=*program2/main.cpp*,captionpos=b]{inc/program2/main.cpp}
+\end{center}
+
+\section{Системные вызовы program 1}
+\begin{verbatim}
+"Time of Day","Process Name","PID","Operation","Path","Result","Detail"
+"16:22:38,3711453","program1.exe","29340","Process Start","","SUCCESS","Parent PID: 16344, Command line: ""D:\MAI-year2\os\os_lab4\build\bin\program1.exe"", Current directory: D:\MAI-year2\os\os_lab4\build\, Environment: 
+;	ALLUSERSPROFILE=C:\ProgramData
+;	APPDATA=C:\Users\Maya SOATIANA\AppData\Roaming
+;	ChocolateyInstall=C:\ProgramData\chocolatey
+;	ChocolateyLastPathUpdate=133772060459044552
+;	CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_26148_ULALDOXBNHXMCSJO
+;	CLASSPATH=.;D:\app\MayaSOATIANA\product\11.2.0\dbhome_1\jdbc\lib\ojdbc6.jar;D:\Pilote\MySqlJdbcDriver\mysql-connector-j-8.1.0.jar;D:\Pilote\postgresql-42.3.7.jar;C:\Program Files\Java\jdk-17\bin;
+;	CommonProgramFiles=C:\Program Files\Common Files
+;	CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+;	CommonProgramW6432=C:\Program Files\Common Files
+;	COMPUTERNAME=DESKTOP-PDV0EPV
+;	ComSpec=C:\WINDOWS\system32\cmd.exe
+;	DriverData=C:\Windows\System32\Drivers\DriverData
+;	EFC_25612_1262719628=1
+;	EFC_25612_1592913036=1
+;	EFC_25612_2283032206=1
+;	EFC_25612_2775293581=1
+;	EFC_25612_3789132940=1
+;	FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+;	FPS_BROWSER_USER_PROFILE_STRING=Default
+;	GNUPLOT_LIB=C:\Program Files\gnuplot\demo;C:\Program Files\gnuplot\demo\games;C:\Program Files\gnuplot\share
+;	HOMEDRIVE=C:
+;	HOMEPATH=\Users\Maya SOATIANA
+;	JAVA_HOME=C:\Program Files\Java\jdk-17
+;	LOCALAPPDATA=C:\Users\Maya SOATIANA\AppData\Local
+;	LOGONSERVER=\\DESKTOP-PDV0EPV
+;	MOZ_PLUGIN_PATH=C:\Program Files (x86)\Foxit Software\Foxit Reader\plugins\
+;	NUMBER_OF_PROCESSORS=8
+;	OneDrive=C:\Users\Maya SOATIANA\OneDrive
+;	ORIGINAL_XDG_CURRENT_DESKTOP=undefined
+;	OS=Windows_NT
+;	Path=c:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\app\MayaSOATIANA\product\11.2.0\dbhome_1\bin;C:\Program Files\Java\jdk1.8.0_361\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\:C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\gcc14\mingw64\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\gnuplot\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Windows\System32\OpenSSH\;C:\Program Files\Python310;C:\Program Files\Python310\Scripts\;C:\Users\Maya SOATIANA\AppData\Roaming\Python\Python310\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\swipl\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\Maya SOATIANA\AppData\Local\Microsoft\WindowsApps;C:\Users\Maya SOATIANA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Maya SOATIANA\.dotnet\tools;C:\Users\Maya SOATIANA\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PyCharm 2025.1.1.1\bin;;D:\swipl\bin;C:\Program Files\swipl\bin;
+;	PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+;	PROCESSOR_ARCHITECTURE=AMD64
+;	PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+;	PROCESSOR_LEVEL=6
+;	PROCESSOR_REVISION=8c01
+;	ProgramData=C:\ProgramData
+;	ProgramFiles=C:\Program Files
+;	ProgramFiles(x86)=C:\Program Files (x86)
+;	ProgramW6432=C:\Program Files
+;	PSModulePath=C:\Users\Maya SOATIANA\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+;	PUBLIC=C:\Users\Public
+;	PyCharm=C:\Program Files\JetBrains\PyCharm 2025.1.1.1\bin;
+;	SESSIONNAME=Console
+;	SystemDrive=C:
+;	SystemRoot=C:\WINDOWS
+;	TEMP=C:\Users\MAYASO~1\AppData\Local\Temp
+;	TMP=C:\Users\MAYASO~1\AppData\Local\Temp
+;	USERDOMAIN=DESKTOP-PDV0EPV
+;	USERDOMAIN_ROAMINGPROFILE=DESKTOP-PDV0EPV
+;	USERNAME=Maya SOATIANA
+;	USERPROFILE=C:\Users\Maya SOATIANA
+;	windir=C:\WINDOWS
+;	ZES_ENABLE_SYSMAN=1
+;	TERM_PROGRAM=vscode
+;	TERM_PROGRAM_VERSION=1.106.3
+;	LANG=en_US.UTF-8
+;	COLORTERM=truecolor
+;	GIT_ASKPASS=c:\Users\Maya "
+"16:22:38,3714731","program1.exe","29340","Thread Create","","SUCCESS","Thread ID: 24652"
+"16:22:38,3869956","program1.exe","29340","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\program1.exe","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:22:38,3870550","program1.exe","29340","QueryBasicInformationFile","D:\MAI-year2\os\os_lab4\build\bin\program1.exe","SUCCESS","CreationTime: 08/12/2025 15:12:06, LastAccessTime: 08/12/2025 16:22:38, LastWriteTime: 08/12/2025 15:12:06, ChangeTime: 08/12/2025 15:12:06, FileAttributes: A"
+"16:22:38,3871068","program1.exe","29340","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\program1.exe","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:22:38,3871356","program1.exe","29340","QueryAttributeInformationVolume","D:\MAI-year2\os\os_lab4\build\bin\program1.exe","SUCCESS","FileSystemAttributes: Case Preserved, Case Sensitive, Unicode, ACLs, Compression, Named Streams, EFS, Object IDs, Reparse Points, Sparse Files, Quotas, Transactions, 0x3c02e00, MaximumComponentNameLength: 255, FileSystemName: NTFS"
+"16:22:38,3872640","program1.exe","29340","CreateFile","D:\MAI-year2\os\os_lab4\build\bin\program1.exe","SUCCESS","Desired Access: Read Attributes, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,3874070","program1.exe","29340","CloseFile","D:\MAI-year2\os\os_lab4\build\bin\program1.exe","SUCCESS",""
+"16:22:38,3874799","program1.exe","29340","QueryStreamInformationFile","D:\MAI-year2\os\os_lab4\build\bin\program1.exe","SUCCESS","0: ::$DATA"
+"16:22:38,3875307","program1.exe","29340","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\program1.exe","SUCCESS","Control: FSCTL_READ_FILE_USN_DATA"
+"16:22:38,3876419","program1.exe","29340","Load Image","D:\MAI-year2\os\os_lab4\build\bin\program1.exe","SUCCESS","Image Base: 0x7ff7ebc00000, Image Size: 0x18000"
+"16:22:38,3879213","program1.exe","29340","Load Image","C:\Windows\System32\ntdll.dll","SUCCESS","Image Base: 0x7fff687e0000, Image Size: 0x268000"
+"16:22:38,3880557","program1.exe","29340","CreateFile","C:\Windows\Prefetch\PROGRAM1.EXE-54F8A147.pf","SUCCESS","Desired Access: Generic Read, Disposition: Open, Options: Synchronous IO Non-Alert, Attributes: n/a, ShareMode: None, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,3881654","program1.exe","29340","QueryStandardInformationFile","C:\Windows\Prefetch\PROGRAM1.EXE-54F8A147.pf","SUCCESS","AllocationSize: 4 096, EndOfFile: 2 365, NumberOfLinks: 1, DeletePending: False, Directory: False"
+"16:22:38,3882115","program1.exe","29340","ReadFile","C:\Windows\Prefetch\PROGRAM1.EXE-54F8A147.pf","SUCCESS","Offset: 0, Length: 2 365, Priority: Normal"
+"16:22:38,3883308","program1.exe","29340","CloseFile","C:\Windows\Prefetch\PROGRAM1.EXE-54F8A147.pf","SUCCESS",""
+"16:22:38,3966157","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Nls\CodePage","REPARSE","Desired Access: Read"
+"16:22:38,3966971","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Nls\CodePage","SUCCESS","Desired Access: Read"
+"16:22:38,3967434","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Nls\CodePage\ACP","SUCCESS","Type: REG_SZ, Length: 12, Data: 65001"
+"16:22:38,3968100","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Nls\CodePage\OEMCP","SUCCESS","Type: REG_SZ, Length: 12, Data: 65001"
+"16:22:38,3968592","program1.exe","29340","RegCloseKey","HKLM\System\CurrentControlSet\Control\Nls\CodePage","SUCCESS",""
+"16:22:38,3969952","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Session Manager","REPARSE","Desired Access: Query Value"
+"16:22:38,3970585","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Session Manager","SUCCESS","Desired Access: Query Value"
+"16:22:38,3971774","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Session Manager\RaiseExceptionOnPossibleDeadlock","NAME NOT FOUND","Length: 80"
+"16:22:38,3972504","program1.exe","29340","RegCloseKey","HKLM\System\CurrentControlSet\Control\Session Manager","SUCCESS",""
+"16:22:38,3973113","program1.exe","29340","RegOpenKey","HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Segment Heap","REPARSE","Desired Access: Query Value"
+"16:22:38,3973999","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Session Manager\Segment Heap","NAME NOT FOUND","Desired Access: Query Value"
+"16:22:38,3975281","program1.exe","29340","RegOpenKey","HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options","SUCCESS","Desired Access: Query Value, Enumerate Sub Keys"
+"16:22:38,3976389","program1.exe","29340","RegOpenKey","HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\program1.exe","NAME NOT FOUND","Desired Access: Query Value, Enumerate Sub Keys"
+"16:22:38,3982129","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Notifications\41911A28A3BC10B5","BUFFER TOO SMALL","Length: 0"
+"16:22:38,3982507","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Notifications\41911A28A3BC10B5","SUCCESS","Type: REG_BINARY, Length: 72, Data: 01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00"
+"16:22:38,3986872","program1.exe","29340","CreateFile","D:\MAI-year2\os\os_lab4\build","SUCCESS","Desired Access: Execute/Traverse, Synchronize, Disposition: Open, Options: Directory, Synchronous IO Non-Alert, Attributes: n/a, ShareMode: Read, Write, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,3991508","program1.exe","29340","Load Image","C:\Windows\System32\kernel32.dll","SUCCESS","Image Base: 0x7fff67890000, Image Size: 0xc9000"
+"16:22:38,3995238","program1.exe","29340","Load Image","C:\Windows\System32\KernelBase.dll","SUCCESS","Image Base: 0x7fff65a20000, Image Size: 0x3f8000"
+"16:22:38,4020698","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\StateSeparation\RedirectionMap\Keys","REPARSE","Desired Access: Read"
+"16:22:38,4022907","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\StateSeparation\RedirectionMap\Keys","NAME NOT FOUND","Desired Access: Read"
+"16:22:38,4026098","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Terminal Server","REPARSE","Desired Access: Read"
+"16:22:38,4027611","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Terminal Server","SUCCESS","Desired Access: Read"
+"16:22:38,4028168","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Terminal Server\TSAppCompat","NAME NOT FOUND","Length: 548"
+"16:22:38,4028519","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Terminal Server\TSUserEnabled","SUCCESS","Type: REG_DWORD, Length: 4, Data: 0"
+"16:22:38,4029045","program1.exe","29340","RegCloseKey","HKLM\System\CurrentControlSet\Control\Terminal Server","SUCCESS",""
+"16:22:38,4032356","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\SafeBoot\Option","REPARSE","Desired Access: Query Value, Set Value"
+"16:22:38,4032923","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\SafeBoot\Option","NAME NOT FOUND","Desired Access: Query Value, Set Value"
+"16:22:38,4033742","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Srp\GP\DLL","REPARSE","Desired Access: Read"
+"16:22:38,4035037","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Srp\GP\DLL","NAME NOT FOUND","Desired Access: Read"
+"16:22:38,4035672","program1.exe","29340","RegOpenKey","HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers","SUCCESS","Desired Access: Query Value"
+"16:22:38,4036500","program1.exe","29340","RegQueryValue","HKLM\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\TransparentEnabled","NAME NOT FOUND","Length: 80"
+"16:22:38,4036899","program1.exe","29340","RegCloseKey","HKLM\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers","SUCCESS",""
+"16:22:38,4037674","program1.exe","29340","RegOpenKey","HKCU\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers","NAME NOT FOUND","Desired Access: Query Value"
+"16:22:38,4038904","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\FileSystem\","REPARSE","Desired Access: Read"
+"16:22:38,4039461","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\FileSystem","SUCCESS","Desired Access: Read"
+"16:22:38,4040005","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\FileSystem\LongPathsEnabled","SUCCESS","Type: REG_DWORD, Length: 4, Data: 1"
+"16:22:38,4041086","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\FileSystem\LPGO","NAME NOT FOUND","Length: 20"
+"16:22:38,4041667","program1.exe","29340","RegCloseKey","HKLM\System\CurrentControlSet\Control\FileSystem","SUCCESS",""
+"16:22:38,4050115","program1.exe","29340","Thread Create","","SUCCESS","Thread ID: 25408"
+"16:22:38,4052130","program1.exe","29340","Load Image","C:\Windows\System32\ucrtbase.dll","SUCCESS","Image Base: 0x7fff662c0000, Image Size: 0x14b000"
+"16:22:38,4053374","program1.exe","29340","Thread Create","","SUCCESS","Thread ID: 26876"
+"16:22:38,4053779","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Session Manager","REPARSE","Desired Access: Query Value"
+"16:22:38,4054261","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Session Manager","SUCCESS","Desired Access: Query Value"
+"16:22:38,4054570","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Session Manager\SafeDllSearchMode","NAME NOT FOUND","Length: 16"
+"16:22:38,4054753","program1.exe","29340","Thread Create","","SUCCESS","Thread ID: 7148"
+"16:22:38,4057061","program1.exe","29340","QueryOpen","D:\MAI-year2\os\os_lab4\build\bin\libgcc_s_seh-1.dll","NAME NOT FOUND",""
+"16:22:38,4057085","program1.exe","29340","QueryOpen","D:\MAI-year2\os\os_lab4\build\bin\libstdc++-6.dll","NAME NOT FOUND",""
+"16:22:38,4057602","program1.exe","29340","QueryOpen","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","CreationTime: 08/12/2025 15:12:06, LastAccessTime: 08/12/2025 16:19:46, LastWriteTime: 08/12/2025 15:12:06, ChangeTime: 08/12/2025 15:12:06, AllocationSize: 57 344, EndOfFile: 54 995, FileAttributes: A"
+"16:22:38,4059549","program1.exe","29340","CreateFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","Desired Access: Read Data/List Directory, Execute/Traverse, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4060312","program1.exe","29340","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:22:38,4060995","program1.exe","29340","QueryBasicInformationFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","CreationTime: 08/12/2025 15:12:06, LastAccessTime: 08/12/2025 16:19:46, LastWriteTime: 08/12/2025 15:12:06, ChangeTime: 08/12/2025 15:12:06, FileAttributes: A"
+"16:22:38,4061509","program1.exe","29340","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:22:38,4061793","program1.exe","29340","QueryAttributeInformationVolume","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","FileSystemAttributes: Case Preserved, Case Sensitive, Unicode, ACLs, Compression, Named Streams, EFS, Object IDs, Reparse Points, Sparse Files, Quotas, Transactions, 0x3c02e00, MaximumComponentNameLength: 255, FileSystemName: NTFS"
+"16:22:38,4062981","program1.exe","29340","CreateFileMapping","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","FILE LOCKED WITH ONLY READERS","SyncType: SyncTypeCreateSection, PageProtection: PAGE_EXECUTE|PAGE_NOCACHE"
+"16:22:38,4063691","program1.exe","29340","CreateFileMapping","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","SyncType: SyncTypeOther"
+"16:22:38,4064917","program1.exe","29340","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:22:38,4065206","program1.exe","29340","QueryBasicInformationFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","CreationTime: 08/12/2025 15:12:06, LastAccessTime: 08/12/2025 16:19:46, LastWriteTime: 08/12/2025 15:12:06, ChangeTime: 08/12/2025 15:12:06, FileAttributes: A"
+"16:22:38,4065664","program1.exe","29340","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:22:38,4065928","program1.exe","29340","QueryAttributeInformationVolume","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","FileSystemAttributes: Case Preserved, Case Sensitive, Unicode, ACLs, Compression, Named Streams, EFS, Object IDs, Reparse Points, Sparse Files, Quotas, Transactions, 0x3c02e00, MaximumComponentNameLength: 255, FileSystemName: NTFS"
+"16:22:38,4067682","program1.exe","29340","CreateFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","Desired Access: Read Attributes, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4068430","program1.exe","29340","CloseFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS",""
+"16:22:38,4069317","program1.exe","29340","QueryStreamInformationFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","0: ::$DATA"
+"16:22:38,4069798","program1.exe","29340","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","Control: FSCTL_READ_FILE_USN_DATA"
+"16:22:38,4070634","program1.exe","29340","Load Image","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","Image Base: 0x7fff5e400000, Image Size: 0x16000"
+"16:22:38,4071616","program1.exe","29340","CloseFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS",""
+"16:22:38,4071967","program1.exe","29340","CreateFile","C:\Windows\System32\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4074625","program1.exe","29340","CreateFile","C:\Windows\System32\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4074805","program1.exe","29340","CreateFile","C:\Windows\System\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4077403","program1.exe","29340","CreateFile","C:\Windows\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4077576","program1.exe","29340","CreateFile","C:\Windows\System\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4078589","program1.exe","29340","QueryOpen","D:\MAI-year2\os\os_lab4\build\libstdc++-6.dll","NAME NOT FOUND",""
+"16:22:38,4081404","program1.exe","29340","CreateFile","C:\Windows\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4082888","program1.exe","29340","QueryOpen","D:\MAI-year2\os\os_lab4\build\libgcc_s_seh-1.dll","NAME NOT FOUND",""
+"16:22:38,4083206","program1.exe","29340","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4087792","program1.exe","29340","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4088383","program1.exe","29340","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4089501","program1.exe","29340","CreateFile","C:\Program Files (x86)\VMware\VMware Workstation\bin\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4090357","program1.exe","29340","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4091444","program1.exe","29340","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libstdc++-6.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:22:38,4092295","program1.exe","29340","CreateFile","C:\Program Files (x86)\VMware\VMware Workstation\bin\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4093852","program1.exe","29340","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4095069","program1.exe","29340","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libgcc_s_seh-1.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:22:38,4096175","program1.exe","29340","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libstdc++-6.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:22:38,4097206","program1.exe","29340","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4098959","program1.exe","29340","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4100189","program1.exe","29340","QueryOpen","D:\app\MayaSOATIANA\product\11.2.0\dbhome_1\BIN\libstdc++-6.dll","NAME NOT FOUND",""
+"16:22:38,4100209","program1.exe","29340","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libgcc_s_seh-1.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:22:38,4102558","program1.exe","29340","CreateFile","C:\Program Files\Java\jdk1.8.0_361\bin\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4102851","program1.exe","29340","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4103977","program1.exe","29340","QueryOpen","D:\app\MayaSOATIANA\product\11.2.0\dbhome_1\BIN\libgcc_s_seh-1.dll","NAME NOT FOUND",""
+"16:22:38,4106356","program1.exe","29340","CreateFile","C:\Program Files\Java\jdk1.8.0_361\bin\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4109479","program1.exe","29340","CreateFile","C:\Windows\System32\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4111708","program1.exe","29340","CreateFile","C:\Windows\System32\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4112646","program1.exe","29340","CreateFile","C:\Windows\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4114529","program1.exe","29340","CreateFile","C:\Windows\System32\wbem\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4115022","program1.exe","29340","CreateFile","C:\Windows\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4116249","program1.exe","29340","CreateFile","C:\Windows\System32\WindowsPowerShell\v1.0\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4117527","program1.exe","29340","CreateFile","C:\Windows\System32\wbem\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4122122","program1.exe","29340","CreateFile","C:\Windows\System32\WindowsPowerShell\v1.0\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4122888","program1.exe","29340","CreateFile","C:\WINDOWS\System32\OpenSSH\:C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin\libstdc++-6.dll","NAME INVALID","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4124238","program1.exe","29340","CreateFile","C:\WINDOWS\System32\OpenSSH\:C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin\libgcc_s_seh-1.dll","NAME INVALID","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4125362","program1.exe","29340","CreateFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4126271","program1.exe","29340","QueryBasicInformationFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","CreationTime: 12/05/2024 09:28:28, LastAccessTime: 08/12/2025 16:19:46, LastWriteTime: 13/09/2025 16:40:12, ChangeTime: 13/09/2025 16:40:12, FileAttributes: A"
+"16:22:38,4126870","program1.exe","29340","CloseFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS",""
+"16:22:38,4127167","program1.exe","29340","CreateFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4127967","program1.exe","29340","QueryBasicInformationFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","CreationTime: 12/05/2024 09:28:28, LastAccessTime: 08/12/2025 16:19:46, LastWriteTime: 13/09/2025 16:40:11, ChangeTime: 13/09/2025 16:40:11, FileAttributes: A"
+"16:22:38,4128471","program1.exe","29340","CloseFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS",""
+"16:22:38,4128552","program1.exe","29340","CreateFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","Desired Access: Read Data/List Directory, Execute/Traverse, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4130508","program1.exe","29340","QueryEAFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS",""
+"16:22:38,4130612","program1.exe","29340","CreateFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","Desired Access: Read Data/List Directory, Execute/Traverse, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4131583","program1.exe","29340","QueryEAFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS",""
+"16:22:38,4132232","program1.exe","29340","CreateFileMapping","C:\gcc14\mingw64\bin\libstdc++-6.dll","FILE LOCKED WITH ONLY READERS","SyncType: SyncTypeCreateSection, PageProtection: PAGE_EXECUTE|PAGE_NOCACHE"
+"16:22:38,4132508","program1.exe","29340","CreateFileMapping","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","FILE LOCKED WITH ONLY READERS","SyncType: SyncTypeCreateSection, PageProtection: PAGE_EXECUTE|PAGE_NOCACHE"
+"16:22:38,4133831","program1.exe","29340","CreateFileMapping","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","SyncType: SyncTypeOther"
+"16:22:38,4133914","program1.exe","29340","CreateFileMapping","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","SyncType: SyncTypeOther"
+"16:22:38,4135448","program1.exe","29340","QueryEAFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS",""
+"16:22:38,4135511","program1.exe","29340","QueryEAFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS",""
+"16:22:38,4138075","program1.exe","29340","CreateFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","Desired Access: Read Attributes, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4139064","program1.exe","29340","CloseFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS",""
+"16:22:38,4139418","program1.exe","29340","CreateFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","Desired Access: Read Attributes, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4140779","program1.exe","29340","CloseFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS",""
+"16:22:38,4141206","program1.exe","29340","QueryStreamInformationFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","0: ::$DATA, 1: :Zone.Identifier:$DATA"
+"16:22:38,4141974","program1.exe","29340","FileSystemControl","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","Control: FSCTL_READ_FILE_USN_DATA"
+"16:22:38,4142237","program1.exe","29340","QueryStreamInformationFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","0: ::$DATA, 1: :Zone.Identifier:$DATA"
+"16:22:38,4142810","program1.exe","29340","FileSystemControl","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","Control: FSCTL_READ_FILE_USN_DATA"
+"16:22:38,4143070","program1.exe","29340","Load Image","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","Image Base: 0x7fff40aa0000, Image Size: 0xd4000"
+"16:22:38,4143583","program1.exe","29340","Load Image","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","Image Base: 0x7fff40b80000, Image Size: 0x248000"
+"16:22:38,4144482","program1.exe","29340","CloseFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS",""
+"16:22:38,4145188","program1.exe","29340","CloseFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS",""
+"16:22:38,4146035","program1.exe","29340","QueryOpen","D:\MAI-year2\os\os_lab4\build\bin\libmcfgthread-1.dll","NAME NOT FOUND",""
+"16:22:38,4147606","program1.exe","29340","QueryOpen","D:\MAI-year2\os\os_lab4\build\bin\libmcfgthread-1.dll","NAME NOT FOUND",""
+"16:22:38,4161041","program1.exe","29340","CreateFile","C:\Windows\System32\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4162626","program1.exe","29340","CreateFile","C:\Windows\System32\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4163914","program1.exe","29340","CreateFile","C:\Windows\System\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4165909","program1.exe","29340","CreateFile","C:\Windows\System\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4167643","program1.exe","29340","CreateFile","C:\Windows\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4168921","program1.exe","29340","QueryOpen","D:\MAI-year2\os\os_lab4\build\libmcfgthread-1.dll","NAME NOT FOUND",""
+"16:22:38,4170236","program1.exe","29340","CreateFile","C:\Windows\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4171256","program1.exe","29340","QueryOpen","D:\MAI-year2\os\os_lab4\build\libmcfgthread-1.dll","NAME NOT FOUND",""
+"16:22:38,4171351","program1.exe","29340","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4173452","program1.exe","29340","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4175131","program1.exe","29340","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4176250","program1.exe","29340","CreateFile","C:\Program Files (x86)\VMware\VMware Workstation\bin\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4178060","program1.exe","29340","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4179023","program1.exe","29340","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libmcfgthread-1.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:22:38,4181036","program1.exe","29340","CreateFile","C:\Program Files (x86)\VMware\VMware Workstation\bin\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4181803","program1.exe","29340","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4183870","program1.exe","29340","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libmcfgthread-1.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:22:38,4184131","program1.exe","29340","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libmcfgthread-1.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:22:38,4185627","program1.exe","29340","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4186484","program1.exe","29340","QueryOpen","D:\app\MayaSOATIANA\product\11.2.0\dbhome_1\BIN\libmcfgthread-1.dll","NAME NOT FOUND",""
+"16:22:38,4187553","program1.exe","29340","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4191890","program1.exe","29340","CreateFile","C:\Program Files\Java\jdk1.8.0_361\bin\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4191979","program1.exe","29340","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libmcfgthread-1.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:22:38,4195266","program1.exe","29340","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4195550","program1.exe","29340","CreateFile","C:\Windows\System32\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4196677","program1.exe","29340","QueryOpen","D:\app\MayaSOATIANA\product\11.2.0\dbhome_1\BIN\libmcfgthread-1.dll","NAME NOT FOUND",""
+"16:22:38,4198886","program1.exe","29340","CreateFile","C:\Windows\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4199430","program1.exe","29340","CreateFile","C:\Program Files\Java\jdk1.8.0_361\bin\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4201604","program1.exe","29340","CreateFile","C:\Windows\System32\wbem\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4202855","program1.exe","29340","CreateFile","C:\Windows\System32\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4204245","program1.exe","29340","CreateFile","C:\Windows\System32\WindowsPowerShell\v1.0\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4206152","program1.exe","29340","CreateFile","C:\Windows\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4206334","program1.exe","29340","CreateFile","C:\WINDOWS\System32\OpenSSH\:C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin\libmcfgthread-1.dll","NAME INVALID","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4209554","program1.exe","29340","CreateFile","C:\Windows\System32\wbem\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4210989","program1.exe","29340","CreateFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4211358","program1.exe","29340","CreateFile","C:\Windows\System32\WindowsPowerShell\v1.0\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4211782","program1.exe","29340","QueryBasicInformationFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","CreationTime: 11/05/2024 22:08:58, LastAccessTime: 08/12/2025 16:19:46, LastWriteTime: 13/09/2025 16:40:11, ChangeTime: 13/09/2025 16:40:11, FileAttributes: A"
+"16:22:38,4212408","program1.exe","29340","CloseFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:22:38,4213637","program1.exe","29340","CreateFile","C:\WINDOWS\System32\OpenSSH\:C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin\libmcfgthread-1.dll","NAME INVALID","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:22:38,4223439","program1.exe","29340","CreateFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Desired Access: Read Data/List Directory, Execute/Traverse, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4224107","program1.exe","29340","QueryEAFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:22:38,4224775","program1.exe","29340","CreateFileMapping","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","FILE LOCKED WITH ONLY READERS","SyncType: SyncTypeCreateSection, PageProtection: PAGE_EXECUTE|PAGE_NOCACHE"
+"16:22:38,4225466","program1.exe","29340","CreateFileMapping","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","SyncType: SyncTypeOther"
+"16:22:38,4226928","program1.exe","29340","QueryEAFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:22:38,4228908","program1.exe","29340","CreateFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4229099","program1.exe","29340","CreateFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Desired Access: Read Attributes, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4230160","program1.exe","29340","QueryBasicInformationFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","CreationTime: 11/05/2024 22:08:58, LastAccessTime: 08/12/2025 16:19:46, LastWriteTime: 13/09/2025 16:40:11, ChangeTime: 13/09/2025 16:40:11, FileAttributes: A"
+"16:22:38,4230619","program1.exe","29340","CloseFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:22:38,4230663","program1.exe","29340","CloseFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:22:38,4231757","program1.exe","29340","QueryStreamInformationFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","0: ::$DATA, 1: :Zone.Identifier:$DATA"
+"16:22:38,4231931","program1.exe","29340","CreateFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Desired Access: Read Data/List Directory, Execute/Traverse, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4232642","program1.exe","29340","FileSystemControl","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Control: FSCTL_READ_FILE_USN_DATA"
+"16:22:38,4232689","program1.exe","29340","QueryEAFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:22:38,4233776","program1.exe","29340","CreateFileMapping","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","FILE LOCKED WITH ONLY READERS","SyncType: SyncTypeCreateSection, PageProtection: PAGE_EXECUTE|PAGE_NOCACHE"
+"16:22:38,4233859","program1.exe","29340","Load Image","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Image Base: 0x7fff62420000, Image Size: 0xf000"
+"16:22:38,4234684","program1.exe","29340","CreateFileMapping","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","SyncType: SyncTypeOther"
+"16:22:38,4235328","program1.exe","29340","RegOpenKey","HKCU","SUCCESS","Desired Access: Maximum Allowed, Granted Access: All Access"
+"16:22:38,4235791","program1.exe","29340","RegOpenKey","HKCU\Control Panel\Desktop\MuiCached\MachineLanguageConfiguration","NAME NOT FOUND","Desired Access: Read"
+"16:22:38,4235990","program1.exe","29340","QueryEAFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:22:38,4236153","program1.exe","29340","RegCloseKey","HKCU","SUCCESS",""
+"16:22:38,4237517","program1.exe","29340","RegOpenKey","HKLM\Software\Policies\Microsoft\MUI\Settings","NAME NOT FOUND","Desired Access: Read"
+"16:22:38,4237635","program1.exe","29340","CreateFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Desired Access: Read Attributes, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4238319","program1.exe","29340","RegOpenKey","HKCU","SUCCESS","Desired Access: Maximum Allowed, Granted Access: All Access"
+"16:22:38,4238378","program1.exe","29340","CloseFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:22:38,4239059","program1.exe","29340","RegOpenKey","HKCU\Software\Policies\Microsoft\Control Panel\Desktop","NAME NOT FOUND","Desired Access: Read"
+"16:22:38,4239155","program1.exe","29340","QueryStreamInformationFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","0: ::$DATA, 1: :Zone.Identifier:$DATA"
+"16:22:38,4239662","program1.exe","29340","RegOpenKey","HKCU\Control Panel\Desktop\LanguageConfiguration","SUCCESS","Desired Access: Read"
+"16:22:38,4239683","program1.exe","29340","FileSystemControl","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Control: FSCTL_READ_FILE_USN_DATA"
+"16:22:38,4240089","program1.exe","29340","RegEnumValue","HKCU\Control Panel\Desktop\LanguageConfiguration","SUCCESS","Index: 0, Name: fr-FR, Type: REG_MULTI_SZ, Length: 14, Data: en-US"
+"16:22:38,4240572","program1.exe","29340","Load Image","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Image Base: 0x17b48200000, Image Size: 0xf000"
+"16:22:38,4240765","program1.exe","29340","RegEnumValue","HKCU\Control Panel\Desktop\LanguageConfiguration","NO MORE ENTRIES","Index: 1, Length: 512"
+"16:22:38,4241355","program1.exe","29340","RegCloseKey","HKCU\Control Panel\Desktop\LanguageConfiguration","SUCCESS",""
+"16:22:38,4241567","program1.exe","29340","CloseFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:22:38,4241764","program1.exe","29340","RegCloseKey","HKCU","SUCCESS",""
+"16:22:38,4242378","program1.exe","29340","RegOpenKey","HKLM\Software\Policies\Microsoft\MUI\Settings","NAME NOT FOUND","Desired Access: Read"
+"16:22:38,4242914","program1.exe","29340","RegOpenKey","HKCU","SUCCESS","Desired Access: Maximum Allowed, Granted Access: All Access"
+"16:22:38,4243373","program1.exe","29340","RegOpenKey","HKCU\Software\Policies\Microsoft\Control Panel\Desktop","NAME NOT FOUND","Desired Access: Read"
+"16:22:38,4243907","program1.exe","29340","RegOpenKey","HKCU\Control Panel\Desktop","SUCCESS","Desired Access: Read"
+"16:22:38,4244850","program1.exe","29340","RegQueryValue","HKCU\Control Panel\Desktop\PreferredUILanguages","BUFFER OVERFLOW","Length: 12"
+"16:22:38,4245209","program1.exe","29340","RegQueryValue","HKCU\Control Panel\Desktop\PreferredUILanguages","SUCCESS","Type: REG_MULTI_SZ, Length: 14, Data: fr-FR"
+"16:22:38,4246033","program1.exe","29340","RegCloseKey","HKCU\Control Panel\Desktop","SUCCESS",""
+"16:22:38,4246359","program1.exe","29340","RegCloseKey","HKCU","SUCCESS",""
+"16:22:38,4246893","program1.exe","29340","RegOpenKey","HKLM\Software\Policies\Microsoft\MUI\Settings","NAME NOT FOUND","Desired Access: Read"
+"16:22:38,4247472","program1.exe","29340","RegOpenKey","HKCU","SUCCESS","Desired Access: Maximum Allowed, Granted Access: All Access"
+"16:22:38,4247829","program1.exe","29340","RegOpenKey","HKCU\Control Panel\Desktop\MuiCached","SUCCESS","Desired Access: Read"
+"16:22:38,4248179","program1.exe","29340","RegQueryValue","HKCU\Control Panel\Desktop\MuiCached\MachinePreferredUILanguages","BUFFER OVERFLOW","Length: 12"
+"16:22:38,4248494","program1.exe","29340","RegQueryValue","HKCU\Control Panel\Desktop\MuiCached\MachinePreferredUILanguages","SUCCESS","Type: REG_MULTI_SZ, Length: 12, Data: fr-FR"
+"16:22:38,4249024","program1.exe","29340","RegCloseKey","HKCU\Control Panel\Desktop\MuiCached","SUCCESS",""
+"16:22:38,4249318","program1.exe","29340","RegCloseKey","HKCU","SUCCESS",""
+"16:22:38,4249818","program1.exe","29340","RegOpenKey","HKLM\Software\Policies\Microsoft\MUI\Settings","NAME NOT FOUND","Desired Access: Read"
+"16:22:38,4250352","program1.exe","29340","RegOpenKey","HKCU","SUCCESS","Desired Access: Maximum Allowed, Granted Access: All Access"
+"16:22:38,4250683","program1.exe","29340","RegOpenKey","HKCU\Software\Policies\Microsoft\Control Panel\Desktop","NAME NOT FOUND","Desired Access: Read"
+"16:22:38,4250998","program1.exe","29340","RegOpenKey","HKCU\Control Panel\Desktop","SUCCESS","Desired Access: Read"
+"16:22:38,4251515","program1.exe","29340","RegQueryValue","HKCU\Control Panel\Desktop\PreferredUILanguages","BUFFER OVERFLOW","Length: 12"
+"16:22:38,4251903","program1.exe","29340","RegQueryValue","HKCU\Control Panel\Desktop\PreferredUILanguages","SUCCESS","Type: REG_MULTI_SZ, Length: 14, Data: fr-FR"
+"16:22:38,4252502","program1.exe","29340","RegCloseKey","HKCU\Control Panel\Desktop","SUCCESS",""
+"16:22:38,4252830","program1.exe","29340","RegCloseKey","HKCU","SUCCESS",""
+"16:22:38,4253654","program1.exe","29340","RegOpenKey","HKLM\Software\Policies\Microsoft\MUI\Settings","NAME NOT FOUND","Desired Access: Read"
+"16:22:38,4254437","program1.exe","29340","RegOpenKey","HKCU","SUCCESS","Desired Access: Maximum Allowed, Granted Access: All Access"
+"16:22:38,4254998","program1.exe","29340","RegOpenKey","HKCU\Software\Policies\Microsoft\Control Panel\Desktop","NAME NOT FOUND","Desired Access: Read"
+"16:22:38,4255402","program1.exe","29340","RegOpenKey","HKCU\Control Panel\Desktop\LanguageConfiguration","SUCCESS","Desired Access: Read"
+"16:22:38,4255820","program1.exe","29340","RegEnumValue","HKCU\Control Panel\Desktop\LanguageConfiguration","SUCCESS","Index: 0, Name: fr-FR, Type: REG_MULTI_SZ, Length: 14, Data: en-US"
+"16:22:38,4256545","program1.exe","29340","RegEnumValue","HKCU\Control Panel\Desktop\LanguageConfiguration","NO MORE ENTRIES","Index: 1, Length: 512"
+"16:22:38,4256934","program1.exe","29340","RegCloseKey","HKCU\Control Panel\Desktop\LanguageConfiguration","SUCCESS",""
+"16:22:38,4257688","program1.exe","29340","RegCloseKey","HKCU","SUCCESS",""
+"16:22:38,4258942","program1.exe","29340","RegOpenKey","HKLM\Software\Microsoft\Windows\CurrentVersion\SideBySide","SUCCESS","Desired Access: Read"
+"16:22:38,4259346","program1.exe","29340","RegQueryValue","HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide\PreferExternalManifest","NAME NOT FOUND","Length: 20"
+"16:22:38,4259653","program1.exe","29340","RegCloseKey","HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide","SUCCESS",""
+"16:22:38,4261533","program1.exe","29340","CreateFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Desired Access: Generic Read, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:38,4270173","program1.exe","29340","CloseFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:22:38,4271271","program1.exe","29340","CloseFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:22:38,4278169","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Session Manager","REPARSE","Desired Access: Query Value"
+"16:22:38,4279997","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Session Manager","SUCCESS","Desired Access: Query Value"
+"16:22:38,4280685","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Session Manager\SmtDelaySleepLoopWindowSize","NAME NOT FOUND","Length: 80"
+"16:22:38,4281085","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Session Manager\SmtDelaySpinCountThreshold","NAME NOT FOUND","Length: 80"
+"16:22:38,4281430","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Session Manager\SmtDelayBaseYield","NAME NOT FOUND","Length: 80"
+"16:22:38,4281803","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Session Manager\SmtFactorYield","NAME NOT FOUND","Length: 80"
+"16:22:38,4282140","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Session Manager\SmtDelayMaxYield","NAME NOT FOUND","Length: 80"
+"16:22:38,4282524","program1.exe","29340","RegCloseKey","HKLM\System\CurrentControlSet\Control\Session Manager","SUCCESS",""
+"16:22:38,4284296","program1.exe","29340","QueryNameInformationFile","D:\MAI-year2\os\os_lab4\build\bin\program1.exe","SUCCESS","Name: \MAI-year2\os\os_lab4\build\bin\program1.exe"
+"16:22:55,3432833","program1.exe","29340","CreateFile","C:\Windows\System32\kernel.appcore.dll","SUCCESS","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:55,3433935","program1.exe","29340","QueryBasicInformationFile","C:\Windows\System32\kernel.appcore.dll","SUCCESS","CreationTime: 15/11/2025 17:03:49, LastAccessTime: 08/12/2025 16:22:30, LastWriteTime: 15/11/2025 17:03:49, ChangeTime: 01/12/2025 02:25:32, FileAttributes: A"
+"16:22:55,3434412","program1.exe","29340","CloseFile","C:\Windows\System32\kernel.appcore.dll","SUCCESS",""
+"16:22:55,3440610","program1.exe","29340","CreateFile","C:\Windows\System32\kernel.appcore.dll","SUCCESS","Desired Access: Read Data/List Directory, Execute/Traverse, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:22:55,3443274","program1.exe","29340","CreateFileMapping","C:\Windows\System32\kernel.appcore.dll","FILE LOCKED WITH ONLY READERS","SyncType: SyncTypeCreateSection, PageProtection: PAGE_EXECUTE|PAGE_NOCACHE"
+"16:22:55,3445134","program1.exe","29340","CreateFileMapping","C:\Windows\System32\kernel.appcore.dll","SUCCESS","SyncType: SyncTypeOther"
+"16:22:55,3450468","program1.exe","29340","Load Image","C:\Windows\System32\kernel.appcore.dll","SUCCESS","Image Base: 0x7fff646b0000, Image Size: 0x1b000"
+"16:22:55,3453601","program1.exe","29340","Load Image","C:\Windows\System32\msvcrt.dll","SUCCESS","Image Base: 0x7fff67420000, Image Size: 0xa9000"
+"16:22:55,3456924","program1.exe","29340","CloseFile","C:\Windows\System32\kernel.appcore.dll","SUCCESS",""
+"16:22:55,3459994","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Nls\Sorting\Versions","REPARSE","Desired Access: Read"
+"16:22:55,3460564","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Control\Nls\Sorting\Versions","SUCCESS","Desired Access: Read"
+"16:22:55,3460914","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Nls\Sorting\Versions\(Default)","SUCCESS","Type: REG_SZ, Length: 18, Data: 00060502"
+"16:22:55,3461391","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Control\Nls\Sorting\Versions\000605xx","SUCCESS","Type: REG_SZ, Length: 26, Data: kernel32.dll"
+"16:22:55,3463032","program1.exe","29340","Thread Exit","","SUCCESS","Thread ID: 25408, User Time: 0.0000000, Kernel Time: 0.0000000"
+"16:22:55,3463120","program1.exe","29340","Thread Exit","","SUCCESS","Thread ID: 26876, User Time: 0.0000000, Kernel Time: 0.0000000"
+"16:22:55,3463163","program1.exe","29340","Thread Exit","","SUCCESS","Thread ID: 7148, User Time: 0.0000000, Kernel Time: 0.0000000"
+"16:22:55,3464320","program1.exe","29340","Thread Exit","","SUCCESS","Thread ID: 24652, User Time: 0.0156250, Kernel Time: 0.0156250"
+"16:22:55,3467731","program1.exe","29340","Process Exit","","SUCCESS","Exit Status: 0, User Time: 0.0156250 seconds, Kernel Time: 0.0156250 seconds, Private Bytes: 966 656, Peak Private Bytes: 966 656, Working Set: 5 013 504, Peak Working Set: 5 013 504"
+"16:22:55,3468545","program1.exe","29340","RegOpenKey","HKLM\System\CurrentControlSet\Services\bam\State\UserSettings\S-1-5-21-625758042-3719212902-3993367195-1001","SUCCESS","Desired Access: All Access"
+"16:22:55,3468884","program1.exe","29340","RegQueryValue","HKLM\System\CurrentControlSet\Services\bam\State\UserSettings\S-1-5-21-625758042-3719212902-3993367195-1001\\Device\HarddiskVolume7\MAI-year2\os\os_lab4\build\bin\program1.exe","NAME NOT FOUND","Length: 40"
+"16:22:55,3469202","program1.exe","29340","RegCloseKey","HKLM\System\CurrentControlSet\Services\bam\State\UserSettings\S-1-5-21-625758042-3719212902-3993367195-1001","SUCCESS",""
+"16:22:55,3469724","program1.exe","29340","RegCloseKey","HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options","SUCCESS",""
+"16:22:55,3470525","program1.exe","29340","CloseFile","D:\MAI-year2\os\os_lab4\build","SUCCESS",""
+"16:22:55,3472907","program1.exe","29340","RegCloseKey","HKLM\System\CurrentControlSet\Control\Session Manager","SUCCESS",""
+"16:22:55,3473258","program1.exe","29340","RegCloseKey","HKLM\System\CurrentControlSet\Control\Nls\Sorting\Versions","SUCCESS",""
+
+\end{verbatim}
+
+\section{Системные вызовы program 2}
+\begin{verbatim}
+"Time of Day","Process Name","PID","Operation","Path","Result","Detail"
+"16:24:51,6784736","program2.exe","14636","Process Start","","SUCCESS","Parent PID: 16344, Command line: ""D:\MAI-year2\os\os_lab4\build\bin\program2.exe"", Current directory: D:\MAI-year2\os\os_lab4\build\, Environment: 
+;	ALLUSERSPROFILE=C:\ProgramData
+;	APPDATA=C:\Users\Maya SOATIANA\AppData\Roaming
+;	ChocolateyInstall=C:\ProgramData\chocolatey
+;	ChocolateyLastPathUpdate=133772060459044552
+;	CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_26148_ULALDOXBNHXMCSJO
+;	CLASSPATH=.;D:\app\MayaSOATIANA\product\11.2.0\dbhome_1\jdbc\lib\ojdbc6.jar;D:\Pilote\MySqlJdbcDriver\mysql-connector-j-8.1.0.jar;D:\Pilote\postgresql-42.3.7.jar;C:\Program Files\Java\jdk-17\bin;
+;	CommonProgramFiles=C:\Program Files\Common Files
+;	CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+;	CommonProgramW6432=C:\Program Files\Common Files
+;	COMPUTERNAME=DESKTOP-PDV0EPV
+;	ComSpec=C:\WINDOWS\system32\cmd.exe
+;	DriverData=C:\Windows\System32\Drivers\DriverData
+;	EFC_25612_1262719628=1
+;	EFC_25612_1592913036=1
+;	EFC_25612_2283032206=1
+;	EFC_25612_2775293581=1
+;	EFC_25612_3789132940=1
+;	FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+;	FPS_BROWSER_USER_PROFILE_STRING=Default
+;	GNUPLOT_LIB=C:\Program Files\gnuplot\demo;C:\Program Files\gnuplot\demo\games;C:\Program Files\gnuplot\share
+;	HOMEDRIVE=C:
+;	HOMEPATH=\Users\Maya SOATIANA
+;	JAVA_HOME=C:\Program Files\Java\jdk-17
+;	LOCALAPPDATA=C:\Users\Maya SOATIANA\AppData\Local
+;	LOGONSERVER=\\DESKTOP-PDV0EPV
+;	MOZ_PLUGIN_PATH=C:\Program Files (x86)\Foxit Software\Foxit Reader\plugins\
+;	NUMBER_OF_PROCESSORS=8
+;	OneDrive=C:\Users\Maya SOATIANA\OneDrive
+;	ORIGINAL_XDG_CURRENT_DESKTOP=undefined
+;	OS=Windows_NT
+;	Path=c:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\app\MayaSOATIANA\product\11.2.0\dbhome_1\bin;C:\Program Files\Java\jdk1.8.0_361\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\:C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\gcc14\mingw64\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\gnuplot\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Windows\System32\OpenSSH\;C:\Program Files\Python310;C:\Program Files\Python310\Scripts\;C:\Users\Maya SOATIANA\AppData\Roaming\Python\Python310\Scripts;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\swipl\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\Maya SOATIANA\AppData\Local\Microsoft\WindowsApps;C:\Users\Maya SOATIANA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Maya SOATIANA\.dotnet\tools;C:\Users\Maya SOATIANA\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PyCharm 2025.1.1.1\bin;;D:\swipl\bin;C:\Program Files\swipl\bin;
+;	PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+;	PROCESSOR_ARCHITECTURE=AMD64
+;	PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+;	PROCESSOR_LEVEL=6
+;	PROCESSOR_REVISION=8c01
+;	ProgramData=C:\ProgramData
+;	ProgramFiles=C:\Program Files
+;	ProgramFiles(x86)=C:\Program Files (x86)
+;	ProgramW6432=C:\Program Files
+;	PSModulePath=C:\Users\Maya SOATIANA\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+;	PUBLIC=C:\Users\Public
+;	PyCharm=C:\Program Files\JetBrains\PyCharm 2025.1.1.1\bin;
+;	SESSIONNAME=Console
+;	SystemDrive=C:
+;	SystemRoot=C:\WINDOWS
+;	TEMP=C:\Users\MAYASO~1\AppData\Local\Temp
+;	TMP=C:\Users\MAYASO~1\AppData\Local\Temp
+;	USERDOMAIN=DESKTOP-PDV0EPV
+;	USERDOMAIN_ROAMINGPROFILE=DESKTOP-PDV0EPV
+;	USERNAME=Maya SOATIANA
+;	USERPROFILE=C:\Users\Maya SOATIANA
+;	windir=C:\WINDOWS
+;	ZES_ENABLE_SYSMAN=1
+;	TERM_PROGRAM=vscode
+;	TERM_PROGRAM_VERSION=1.106.3
+;	LANG=en_US.UTF-8
+;	COLORTERM=truecolor
+;	GIT_ASKPASS=c:\Users\Maya "
+"16:24:51,6789278","program2.exe","14636","Thread Create","","SUCCESS","Thread ID: 17872"
+"16:24:51,7218915","program2.exe","14636","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\program2.exe","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:24:51,7226450","program2.exe","14636","QueryBasicInformationFile","D:\MAI-year2\os\os_lab4\build\bin\program2.exe","SUCCESS","CreationTime: 08/12/2025 13:56:53, LastAccessTime: 08/12/2025 16:24:51, LastWriteTime: 08/12/2025 13:56:53, ChangeTime: 08/12/2025 13:56:53, FileAttributes: A"
+"16:24:51,7229030","program2.exe","14636","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\program2.exe","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:24:51,7232166","program2.exe","14636","QueryAttributeInformationVolume","D:\MAI-year2\os\os_lab4\build\bin\program2.exe","SUCCESS","FileSystemAttributes: Case Preserved, Case Sensitive, Unicode, ACLs, Compression, Named Streams, EFS, Object IDs, Reparse Points, Sparse Files, Quotas, Transactions, 0x3c02e00, MaximumComponentNameLength: 255, FileSystemName: NTFS"
+"16:24:51,7236287","program2.exe","14636","CreateFile","D:\MAI-year2\os\os_lab4\build\bin\program2.exe","SUCCESS","Desired Access: Read Attributes, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,7238530","program2.exe","14636","CloseFile","D:\MAI-year2\os\os_lab4\build\bin\program2.exe","SUCCESS",""
+"16:24:51,7241851","program2.exe","14636","QueryStreamInformationFile","D:\MAI-year2\os\os_lab4\build\bin\program2.exe","SUCCESS","0: ::$DATA"
+"16:24:51,7243743","program2.exe","14636","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\program2.exe","SUCCESS","Control: FSCTL_READ_FILE_USN_DATA"
+"16:24:51,7247067","program2.exe","14636","Load Image","D:\MAI-year2\os\os_lab4\build\bin\program2.exe","SUCCESS","Image Base: 0x7ff689900000, Image Size: 0x19000"
+"16:24:51,7251101","program2.exe","14636","Load Image","C:\Windows\System32\ntdll.dll","SUCCESS","Image Base: 0x7fff687e0000, Image Size: 0x268000"
+"16:24:51,7254828","program2.exe","14636","CreateFile","C:\Windows\Prefetch\PROGRAM2.EXE-684E5BCC.pf","SUCCESS","Desired Access: Generic Read, Disposition: Open, Options: Synchronous IO Non-Alert, Attributes: n/a, ShareMode: None, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,7266654","program2.exe","14636","QueryStandardInformationFile","C:\Windows\Prefetch\PROGRAM2.EXE-684E5BCC.pf","SUCCESS","AllocationSize: 4 096, EndOfFile: 2 470, NumberOfLinks: 1, DeletePending: False, Directory: False"
+"16:24:51,7271203","program2.exe","14636","ReadFile","C:\Windows\Prefetch\PROGRAM2.EXE-684E5BCC.pf","SUCCESS","Offset: 0, Length: 2 470, Priority: Normal"
+"16:24:51,7274235","program2.exe","14636","ReadFile","C:\Windows\Prefetch\PROGRAM2.EXE-684E5BCC.pf","SUCCESS","Offset: 0, Length: 2 470, I/O Flags: Non-cached, Paging I/O, Priority: Normal"
+"16:24:51,7286125","program2.exe","14636","CloseFile","C:\Windows\Prefetch\PROGRAM2.EXE-684E5BCC.pf","SUCCESS",""
+"16:24:51,7524917","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Nls\CodePage","REPARSE","Desired Access: Read"
+"16:24:51,7528675","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Nls\CodePage","SUCCESS","Desired Access: Read"
+"16:24:51,7530947","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Nls\CodePage\ACP","SUCCESS","Type: REG_SZ, Length: 12, Data: 65001"
+"16:24:51,7536559","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Nls\CodePage\OEMCP","SUCCESS","Type: REG_SZ, Length: 12, Data: 65001"
+"16:24:51,7538149","program2.exe","14636","RegCloseKey","HKLM\System\CurrentControlSet\Control\Nls\CodePage","SUCCESS",""
+"16:24:51,7544034","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Session Manager","REPARSE","Desired Access: Query Value"
+"16:24:51,7546458","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Session Manager","SUCCESS","Desired Access: Query Value"
+"16:24:51,7550686","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Session Manager\RaiseExceptionOnPossibleDeadlock","NAME NOT FOUND","Length: 80"
+"16:24:51,7552007","program2.exe","14636","RegCloseKey","HKLM\System\CurrentControlSet\Control\Session Manager","SUCCESS",""
+"16:24:51,7552978","program2.exe","14636","RegOpenKey","HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Segment Heap","REPARSE","Desired Access: Query Value"
+"16:24:51,7554316","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Session Manager\Segment Heap","NAME NOT FOUND","Desired Access: Query Value"
+"16:24:51,7555435","program2.exe","14636","RegOpenKey","HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options","SUCCESS","Desired Access: Query Value, Enumerate Sub Keys"
+"16:24:51,7556852","program2.exe","14636","RegOpenKey","HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\program2.exe","NAME NOT FOUND","Desired Access: Query Value, Enumerate Sub Keys"
+"16:24:51,7563724","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Notifications\41911A28A3BC10B5","BUFFER TOO SMALL","Length: 0"
+"16:24:51,7566022","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Notifications\41911A28A3BC10B5","SUCCESS","Type: REG_BINARY, Length: 72, Data: 01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00"
+"16:24:51,7573004","program2.exe","14636","CreateFile","D:\MAI-year2\os\os_lab4\build","SUCCESS","Desired Access: Execute/Traverse, Synchronize, Disposition: Open, Options: Directory, Synchronous IO Non-Alert, Attributes: n/a, ShareMode: Read, Write, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,7580281","program2.exe","14636","Load Image","C:\Windows\System32\kernel32.dll","SUCCESS","Image Base: 0x7fff67890000, Image Size: 0xc9000"
+"16:24:51,7587934","program2.exe","14636","Load Image","C:\Windows\System32\KernelBase.dll","SUCCESS","Image Base: 0x7fff65a20000, Image Size: 0x3f8000"
+"16:24:51,7622458","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\StateSeparation\RedirectionMap\Keys","REPARSE","Desired Access: Read"
+"16:24:51,7626662","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\StateSeparation\RedirectionMap\Keys","NAME NOT FOUND","Desired Access: Read"
+"16:24:51,7630619","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Terminal Server","REPARSE","Desired Access: Read"
+"16:24:51,7631841","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Terminal Server","SUCCESS","Desired Access: Read"
+"16:24:51,7633462","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Terminal Server\TSAppCompat","NAME NOT FOUND","Length: 548"
+"16:24:51,7634971","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Terminal Server\TSUserEnabled","SUCCESS","Type: REG_DWORD, Length: 4, Data: 0"
+"16:24:51,7639036","program2.exe","14636","RegCloseKey","HKLM\System\CurrentControlSet\Control\Terminal Server","SUCCESS",""
+"16:24:51,7646167","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\SafeBoot\Option","REPARSE","Desired Access: Query Value, Set Value"
+"16:24:51,7648316","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\SafeBoot\Option","NAME NOT FOUND","Desired Access: Query Value, Set Value"
+"16:24:51,7650011","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Srp\GP\DLL","REPARSE","Desired Access: Read"
+"16:24:51,7654019","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Srp\GP\DLL","NAME NOT FOUND","Desired Access: Read"
+"16:24:51,7655797","program2.exe","14636","RegOpenKey","HKLM\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers","SUCCESS","Desired Access: Query Value"
+"16:24:51,7660016","program2.exe","14636","RegQueryValue","HKLM\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers\TransparentEnabled","NAME NOT FOUND","Length: 80"
+"16:24:51,7663212","program2.exe","14636","RegCloseKey","HKLM\SOFTWARE\Policies\Microsoft\Windows\safer\codeidentifiers","SUCCESS",""
+"16:24:51,7664546","program2.exe","14636","RegOpenKey","HKCU\Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers","NAME NOT FOUND","Desired Access: Query Value"
+"16:24:51,7666243","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\FileSystem\","REPARSE","Desired Access: Read"
+"16:24:51,7668801","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\FileSystem","SUCCESS","Desired Access: Read"
+"16:24:51,7670435","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\FileSystem\LongPathsEnabled","SUCCESS","Type: REG_DWORD, Length: 4, Data: 1"
+"16:24:51,7672859","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\FileSystem\LPGO","NAME NOT FOUND","Length: 20"
+"16:24:51,7674861","program2.exe","14636","RegCloseKey","HKLM\System\CurrentControlSet\Control\FileSystem","SUCCESS",""
+"16:24:51,7677884","program2.exe","14636","Thread Create","","SUCCESS","Thread ID: 16620"
+"16:24:51,7679536","program2.exe","14636","Thread Create","","SUCCESS","Thread ID: 6544"
+"16:24:51,7681282","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Session Manager","REPARSE","Desired Access: Query Value"
+"16:24:51,7682908","program2.exe","14636","Load Image","C:\Windows\System32\ucrtbase.dll","SUCCESS","Image Base: 0x7fff662c0000, Image Size: 0x14b000"
+"16:24:51,7684466","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Session Manager","SUCCESS","Desired Access: Query Value"
+"16:24:51,7686677","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Session Manager\SafeDllSearchMode","NAME NOT FOUND","Length: 16"
+"16:24:51,7687432","program2.exe","14636","Thread Create","","SUCCESS","Thread ID: 23512"
+"16:24:51,7691896","program2.exe","14636","QueryOpen","D:\MAI-year2\os\os_lab4\build\bin\libstdc++-6.dll","NAME NOT FOUND",""
+"16:24:51,7692821","program2.exe","14636","QueryOpen","D:\MAI-year2\os\os_lab4\build\bin\libgcc_s_seh-1.dll","NAME NOT FOUND",""
+"16:24:51,7704547","program2.exe","14636","CreateFile","C:\Windows\System32\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7707398","program2.exe","14636","CreateFile","C:\Windows\System32\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7710536","program2.exe","14636","CreateFile","C:\Windows\System\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7714274","program2.exe","14636","CreateFile","C:\Windows\System\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7723791","program2.exe","14636","CreateFile","C:\Windows\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7725835","program2.exe","14636","QueryOpen","D:\MAI-year2\os\os_lab4\build\libstdc++-6.dll","NAME NOT FOUND",""
+"16:24:51,7732008","program2.exe","14636","CreateFile","C:\Windows\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7734575","program2.exe","14636","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7735473","program2.exe","14636","QueryOpen","D:\MAI-year2\os\os_lab4\build\libgcc_s_seh-1.dll","NAME NOT FOUND",""
+"16:24:51,7740186","program2.exe","14636","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7749052","program2.exe","14636","CreateFile","C:\Program Files (x86)\VMware\VMware Workstation\bin\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7750405","program2.exe","14636","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7760573","program2.exe","14636","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libstdc++-6.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:24:51,7761804","program2.exe","14636","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7766684","program2.exe","14636","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7769461","program2.exe","14636","CreateFile","C:\Program Files (x86)\VMware\VMware Workstation\bin\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7776041","program2.exe","14636","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libstdc++-6.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:24:51,7779949","program2.exe","14636","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libgcc_s_seh-1.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:24:51,7784070","program2.exe","14636","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7786826","program2.exe","14636","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7788086","program2.exe","14636","QueryOpen","D:\app\MayaSOATIANA\product\11.2.0\dbhome_1\BIN\libstdc++-6.dll","NAME NOT FOUND",""
+"16:24:51,7793162","program2.exe","14636","CreateFile","C:\Program Files\Java\jdk1.8.0_361\bin\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7794816","program2.exe","14636","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libgcc_s_seh-1.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:24:51,7799521","program2.exe","14636","CreateFile","C:\Windows\System32\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7802220","program2.exe","14636","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7804442","program2.exe","14636","QueryOpen","D:\app\MayaSOATIANA\product\11.2.0\dbhome_1\BIN\libgcc_s_seh-1.dll","NAME NOT FOUND",""
+"16:24:51,7808263","program2.exe","14636","CreateFile","C:\Windows\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7810725","program2.exe","14636","CreateFile","C:\Program Files\Java\jdk1.8.0_361\bin\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7815273","program2.exe","14636","CreateFile","C:\Windows\System32\wbem\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7821420","program2.exe","14636","CreateFile","C:\Windows\System32\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7821755","program2.exe","14636","CreateFile","C:\Windows\System32\WindowsPowerShell\v1.0\libstdc++-6.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7826834","program2.exe","14636","CreateFile","C:\WINDOWS\System32\OpenSSH\:C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin\libstdc++-6.dll","NAME INVALID","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7833840","program2.exe","14636","CreateFile","C:\Windows\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7834320","program2.exe","14636","CreateFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,7837221","program2.exe","14636","QueryBasicInformationFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","CreationTime: 12/05/2024 09:28:28, LastAccessTime: 08/12/2025 16:22:38, LastWriteTime: 13/09/2025 16:40:12, ChangeTime: 13/09/2025 16:40:12, FileAttributes: A"
+"16:24:51,7840010","program2.exe","14636","CloseFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS",""
+"16:24:51,7840221","program2.exe","14636","CreateFile","C:\Windows\System32\wbem\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7846826","program2.exe","14636","CreateFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","Desired Access: Read Data/List Directory, Execute/Traverse, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,7848372","program2.exe","14636","CreateFile","C:\Windows\System32\WindowsPowerShell\v1.0\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7849383","program2.exe","14636","QueryEAFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS",""
+"16:24:51,7852237","program2.exe","14636","CreateFileMapping","C:\gcc14\mingw64\bin\libstdc++-6.dll","FILE LOCKED WITH ONLY READERS","SyncType: SyncTypeCreateSection, PageProtection: PAGE_EXECUTE|PAGE_NOCACHE"
+"16:24:51,7859327","program2.exe","14636","CreateFile","C:\WINDOWS\System32\OpenSSH\:C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin\libgcc_s_seh-1.dll","NAME INVALID","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7864849","program2.exe","14636","CreateFileMapping","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","SyncType: SyncTypeOther"
+"16:24:51,7866777","program2.exe","14636","CreateFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,7868886","program2.exe","14636","QueryBasicInformationFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","CreationTime: 12/05/2024 09:28:28, LastAccessTime: 08/12/2025 16:22:38, LastWriteTime: 13/09/2025 16:40:11, ChangeTime: 13/09/2025 16:40:11, FileAttributes: A"
+"16:24:51,7870174","program2.exe","14636","CloseFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS",""
+"16:24:51,7870282","program2.exe","14636","QueryEAFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS",""
+"16:24:51,7874743","program2.exe","14636","CreateFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","Desired Access: Read Attributes, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,7875849","program2.exe","14636","CreateFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","Desired Access: Read Data/List Directory, Execute/Traverse, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,7877618","program2.exe","14636","CloseFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS",""
+"16:24:51,7877713","program2.exe","14636","QueryEAFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS",""
+"16:24:51,7879477","program2.exe","14636","CreateFileMapping","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","FILE LOCKED WITH ONLY READERS","SyncType: SyncTypeCreateSection, PageProtection: PAGE_EXECUTE|PAGE_NOCACHE"
+"16:24:51,7884280","program2.exe","14636","CreateFileMapping","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","SyncType: SyncTypeOther"
+"16:24:51,7887839","program2.exe","14636","QueryStreamInformationFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","0: ::$DATA, 1: :Zone.Identifier:$DATA"
+"16:24:51,7890161","program2.exe","14636","QueryEAFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS",""
+"16:24:51,7890318","program2.exe","14636","FileSystemControl","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","Control: FSCTL_READ_FILE_USN_DATA"
+"16:24:51,7892251","program2.exe","14636","Load Image","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS","Image Base: 0x7fff40b80000, Image Size: 0x248000"
+"16:24:51,7893291","program2.exe","14636","CreateFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","Desired Access: Read Attributes, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,7896414","program2.exe","14636","QueryOpen","D:\MAI-year2\os\os_lab4\build\bin\libmcfgthread-1.dll","NAME NOT FOUND",""
+"16:24:51,7896486","program2.exe","14636","CloseFile","C:\gcc14\mingw64\bin\libstdc++-6.dll","SUCCESS",""
+"16:24:51,7896750","program2.exe","14636","CloseFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS",""
+"16:24:51,7900844","program2.exe","14636","QueryOpen","D:\MAI-year2\os\os_lab4\build\bin\libgcc_s_seh-1.dll","NAME NOT FOUND",""
+"16:24:51,7901560","program2.exe","14636","QueryStreamInformationFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","0: ::$DATA, 1: :Zone.Identifier:$DATA"
+"16:24:51,7903986","program2.exe","14636","FileSystemControl","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","Control: FSCTL_READ_FILE_USN_DATA"
+"16:24:51,7906463","program2.exe","14636","Load Image","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","Image Base: 0x7fff40aa0000, Image Size: 0xd4000"
+"16:24:51,7908773","program2.exe","14636","CloseFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS",""
+"16:24:51,7910948","program2.exe","14636","CreateFile","C:\Windows\System32\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7914995","program2.exe","14636","CreateFile","C:\Windows\System32\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7920200","program2.exe","14636","CreateFile","C:\Windows\System\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7920596","program2.exe","14636","QueryOpen","D:\MAI-year2\os\os_lab4\build\bin\libmcfgthread-1.dll","NAME NOT FOUND",""
+"16:24:51,7923822","program2.exe","14636","CreateFile","C:\Windows\System\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7935194","program2.exe","14636","CreateFile","C:\Windows\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7938199","program2.exe","14636","CreateFile","C:\Windows\System32\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7939673","program2.exe","14636","CreateFile","C:\Windows\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7943857","program2.exe","14636","QueryOpen","D:\MAI-year2\os\os_lab4\build\libmcfgthread-1.dll","NAME NOT FOUND",""
+"16:24:51,7949469","program2.exe","14636","QueryOpen","D:\MAI-year2\os\os_lab4\build\libgcc_s_seh-1.dll","NAME NOT FOUND",""
+"16:24:51,7951996","program2.exe","14636","CreateFile","C:\Windows\System\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7961624","program2.exe","14636","CreateFile","C:\Windows\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7963274","program2.exe","14636","QueryOpen","D:\MAI-year2\os\os_lab4\build\libmcfgthread-1.dll","NAME NOT FOUND",""
+"16:24:51,7964346","program2.exe","14636","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7965349","program2.exe","14636","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7971600","program2.exe","14636","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7974617","program2.exe","14636","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7974827","program2.exe","14636","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7977422","program2.exe","14636","CreateFile","C:\Program Files (x86)\VMware\VMware Workstation\bin\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7983198","program2.exe","14636","CreateFile","C:\Program Files (x86)\VMware\VMware Workstation\bin\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7984197","program2.exe","14636","CreateFile","C:\Users\Maya SOATIANA\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7990062","program2.exe","14636","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libmcfgthread-1.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:24:51,7990956","program2.exe","14636","CreateFile","C:\Program Files (x86)\VMware\VMware Workstation\bin\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,7998128","program2.exe","14636","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libmcfgthread-1.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:24:51,7998568","program2.exe","14636","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libgcc_s_seh-1.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:24:51,8002986","program2.exe","14636","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8007554","program2.exe","14636","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8009457","program2.exe","14636","CreateFile","C:\Program Files\Common Files\Oracle\Java\javapath_target_22748625\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8012133","program2.exe","14636","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libmcfgthread-1.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:24:51,8020280","program2.exe","14636","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libgcc_s_seh-1.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:24:51,8024023","program2.exe","14636","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8024490","program2.exe","14636","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libmcfgthread-1.dll","REPARSE","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: <unknown>"
+"16:24:51,8026246","program2.exe","14636","QueryOpen","D:\app\MayaSOATIANA\product\11.2.0\dbhome_1\BIN\libmcfgthread-1.dll","NAME NOT FOUND",""
+"16:24:51,8031324","program2.exe","14636","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8031585","program2.exe","14636","CreateFile","C:\Program Files\Java\jdk1.8.0_361\bin\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8033963","program2.exe","14636","CreateFile","C:\Program Files (x86)\Common Files\Oracle\Java\javapath_target_91359062\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8034562","program2.exe","14636","QueryOpen","D:\app\MayaSOATIANA\product\11.2.0\dbhome_1\BIN\libgcc_s_seh-1.dll","NAME NOT FOUND",""
+"16:24:51,8036239","program2.exe","14636","QueryOpen","D:\app\MayaSOATIANA\product\11.2.0\dbhome_1\BIN\libmcfgthread-1.dll","NAME NOT FOUND",""
+"16:24:51,8039764","program2.exe","14636","CreateFile","C:\Program Files\Java\jdk1.8.0_361\bin\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8041281","program2.exe","14636","CreateFile","C:\Program Files\Java\jdk1.8.0_361\bin\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8045215","program2.exe","14636","CreateFile","C:\Windows\System32\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8050727","program2.exe","14636","CreateFile","C:\Windows\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8054838","program2.exe","14636","CreateFile","C:\Windows\System32\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8056343","program2.exe","14636","CreateFile","C:\Windows\System32\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8059794","program2.exe","14636","CreateFile","C:\Windows\System32\wbem\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8064276","program2.exe","14636","CreateFile","C:\Windows\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8064522","program2.exe","14636","CreateFile","C:\Windows\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8067862","program2.exe","14636","CreateFile","C:\Windows\System32\WindowsPowerShell\v1.0\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8071460","program2.exe","14636","CreateFile","C:\WINDOWS\System32\OpenSSH\:C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin\libmcfgthread-1.dll","NAME INVALID","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8073554","program2.exe","14636","CreateFile","C:\Windows\System32\wbem\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8076076","program2.exe","14636","CreateFile","C:\Windows\System32\wbem\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8076244","program2.exe","14636","CreateFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,8078912","program2.exe","14636","QueryBasicInformationFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","CreationTime: 11/05/2024 22:08:58, LastAccessTime: 08/12/2025 16:22:38, LastWriteTime: 13/09/2025 16:40:11, ChangeTime: 13/09/2025 16:40:11, FileAttributes: A"
+"16:24:51,8081372","program2.exe","14636","CreateFile","C:\Windows\System32\WindowsPowerShell\v1.0\libmcfgthread-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8081678","program2.exe","14636","CreateFile","C:\Windows\System32\WindowsPowerShell\v1.0\libgcc_s_seh-1.dll","NAME NOT FOUND","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8082387","program2.exe","14636","CloseFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:24:51,8086142","program2.exe","14636","CreateFile","C:\WINDOWS\System32\OpenSSH\:C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin\libmcfgthread-1.dll","NAME INVALID","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8087645","program2.exe","14636","CreateFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Desired Access: Read Data/List Directory, Execute/Traverse, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,8088828","program2.exe","14636","QueryEAFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:24:51,8088986","program2.exe","14636","CreateFile","C:\WINDOWS\System32\OpenSSH\:C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin\libgcc_s_seh-1.dll","NAME INVALID","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a"
+"16:24:51,8091490","program2.exe","14636","CreateFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,8093125","program2.exe","14636","CreateFileMapping","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","FILE LOCKED WITH ONLY READERS","SyncType: SyncTypeCreateSection, PageProtection: PAGE_EXECUTE|PAGE_NOCACHE"
+"16:24:51,8093936","program2.exe","14636","CreateFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,8094087","program2.exe","14636","QueryBasicInformationFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","CreationTime: 11/05/2024 22:08:58, LastAccessTime: 08/12/2025 16:22:38, LastWriteTime: 13/09/2025 16:40:11, ChangeTime: 13/09/2025 16:40:11, FileAttributes: A"
+"16:24:51,8095895","program2.exe","14636","QueryBasicInformationFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS","CreationTime: 12/05/2024 09:28:28, LastAccessTime: 08/12/2025 16:24:51, LastWriteTime: 13/09/2025 16:40:11, ChangeTime: 13/09/2025 16:40:11, FileAttributes: A"
+"16:24:51,8097037","program2.exe","14636","CloseFile","C:\gcc14\mingw64\bin\libgcc_s_seh-1.dll","SUCCESS",""
+"16:24:51,8097110","program2.exe","14636","CreateFileMapping","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","SyncType: SyncTypeOther"
+"16:24:51,8099108","program2.exe","14636","CloseFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:24:51,8102919","program2.exe","14636","QueryEAFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:24:51,8107812","program2.exe","14636","CreateFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Desired Access: Read Attributes, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,8109141","program2.exe","14636","CreateFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Desired Access: Read Data/List Directory, Execute/Traverse, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,8110679","program2.exe","14636","CloseFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:24:51,8111667","program2.exe","14636","QueryEAFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:24:51,8113772","program2.exe","14636","CreateFileMapping","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","FILE LOCKED WITH ONLY READERS","SyncType: SyncTypeCreateSection, PageProtection: PAGE_EXECUTE|PAGE_NOCACHE"
+"16:24:51,8115989","program2.exe","14636","QueryStreamInformationFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","0: ::$DATA, 1: :Zone.Identifier:$DATA"
+"16:24:51,8116262","program2.exe","14636","CreateFileMapping","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","SyncType: SyncTypeOther"
+"16:24:51,8118226","program2.exe","14636","FileSystemControl","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Control: FSCTL_READ_FILE_USN_DATA"
+"16:24:51,8119006","program2.exe","14636","QueryEAFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:24:51,8119906","program2.exe","14636","Load Image","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Image Base: 0x7fff62480000, Image Size: 0xf000"
+"16:24:51,8123070","program2.exe","14636","RegOpenKey","HKCU","SUCCESS","Desired Access: Maximum Allowed, Granted Access: All Access"
+"16:24:51,8123478","program2.exe","14636","CreateFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Desired Access: Read Attributes, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,8125134","program2.exe","14636","CloseFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:24:51,8125821","program2.exe","14636","RegOpenKey","HKCU\Control Panel\Desktop\MuiCached\MachineLanguageConfiguration","NAME NOT FOUND","Desired Access: Read"
+"16:24:51,8130222","program2.exe","14636","RegCloseKey","HKCU","SUCCESS",""
+"16:24:51,8134058","program2.exe","14636","RegOpenKey","HKLM\Software\Policies\Microsoft\MUI\Settings","NAME NOT FOUND","Desired Access: Read"
+"16:24:51,8134273","program2.exe","14636","QueryStreamInformationFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","0: ::$DATA, 1: :Zone.Identifier:$DATA"
+"16:24:51,8136111","program2.exe","14636","RegOpenKey","HKCU","SUCCESS","Desired Access: Maximum Allowed, Granted Access: All Access"
+"16:24:51,8137370","program2.exe","14636","FileSystemControl","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Control: FSCTL_READ_FILE_USN_DATA"
+"16:24:51,8138122","program2.exe","14636","RegOpenKey","HKCU\Software\Policies\Microsoft\Control Panel\Desktop","NAME NOT FOUND","Desired Access: Read"
+"16:24:51,8140303","program2.exe","14636","Load Image","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Image Base: 0x25085af0000, Image Size: 0xf000"
+"16:24:51,8140848","program2.exe","14636","RegOpenKey","HKCU\Control Panel\Desktop\LanguageConfiguration","SUCCESS","Desired Access: Read"
+"16:24:51,8141613","program2.exe","14636","CloseFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:24:51,8142834","program2.exe","14636","RegEnumValue","HKCU\Control Panel\Desktop\LanguageConfiguration","SUCCESS","Index: 0, Name: fr-FR, Type: REG_MULTI_SZ, Length: 14, Data: en-US"
+"16:24:51,8144118","program2.exe","14636","RegEnumValue","HKCU\Control Panel\Desktop\LanguageConfiguration","NO MORE ENTRIES","Index: 1, Length: 512"
+"16:24:51,8144594","program2.exe","14636","RegCloseKey","HKCU\Control Panel\Desktop\LanguageConfiguration","SUCCESS",""
+"16:24:51,8146471","program2.exe","14636","RegCloseKey","HKCU","SUCCESS",""
+"16:24:51,8152656","program2.exe","14636","RegOpenKey","HKLM\Software\Policies\Microsoft\MUI\Settings","NAME NOT FOUND","Desired Access: Read"
+"16:24:51,8153576","program2.exe","14636","RegOpenKey","HKCU","SUCCESS","Desired Access: Maximum Allowed, Granted Access: All Access"
+"16:24:51,8156985","program2.exe","14636","RegOpenKey","HKCU\Software\Policies\Microsoft\Control Panel\Desktop","NAME NOT FOUND","Desired Access: Read"
+"16:24:51,8157658","program2.exe","14636","RegOpenKey","HKCU\Control Panel\Desktop","SUCCESS","Desired Access: Read"
+"16:24:51,8159733","program2.exe","14636","RegQueryValue","HKCU\Control Panel\Desktop\PreferredUILanguages","BUFFER OVERFLOW","Length: 12"
+"16:24:51,8160736","program2.exe","14636","RegQueryValue","HKCU\Control Panel\Desktop\PreferredUILanguages","SUCCESS","Type: REG_MULTI_SZ, Length: 14, Data: fr-FR"
+"16:24:51,8163210","program2.exe","14636","RegCloseKey","HKCU\Control Panel\Desktop","SUCCESS",""
+"16:24:51,8164078","program2.exe","14636","RegCloseKey","HKCU","SUCCESS",""
+"16:24:51,8166284","program2.exe","14636","RegOpenKey","HKLM\Software\Policies\Microsoft\MUI\Settings","NAME NOT FOUND","Desired Access: Read"
+"16:24:51,8167493","program2.exe","14636","RegOpenKey","HKCU","SUCCESS","Desired Access: Maximum Allowed, Granted Access: All Access"
+"16:24:51,8168758","program2.exe","14636","RegOpenKey","HKCU\Control Panel\Desktop\MuiCached","SUCCESS","Desired Access: Read"
+"16:24:51,8170149","program2.exe","14636","RegQueryValue","HKCU\Control Panel\Desktop\MuiCached\MachinePreferredUILanguages","BUFFER OVERFLOW","Length: 12"
+"16:24:51,8172118","program2.exe","14636","RegQueryValue","HKCU\Control Panel\Desktop\MuiCached\MachinePreferredUILanguages","SUCCESS","Type: REG_MULTI_SZ, Length: 12, Data: fr-FR"
+"16:24:51,8174392","program2.exe","14636","RegCloseKey","HKCU\Control Panel\Desktop\MuiCached","SUCCESS",""
+"16:24:51,8174878","program2.exe","14636","RegCloseKey","HKCU","SUCCESS",""
+"16:24:51,8178062","program2.exe","14636","RegOpenKey","HKLM\Software\Policies\Microsoft\MUI\Settings","NAME NOT FOUND","Desired Access: Read"
+"16:24:51,8179521","program2.exe","14636","RegOpenKey","HKCU","SUCCESS","Desired Access: Maximum Allowed, Granted Access: All Access"
+"16:24:51,8182530","program2.exe","14636","RegOpenKey","HKCU\Software\Policies\Microsoft\Control Panel\Desktop","NAME NOT FOUND","Desired Access: Read"
+"16:24:51,8184542","program2.exe","14636","RegOpenKey","HKCU\Control Panel\Desktop","SUCCESS","Desired Access: Read"
+"16:24:51,8190870","program2.exe","14636","RegQueryValue","HKCU\Control Panel\Desktop\PreferredUILanguages","BUFFER OVERFLOW","Length: 12"
+"16:24:51,8193798","program2.exe","14636","RegQueryValue","HKCU\Control Panel\Desktop\PreferredUILanguages","SUCCESS","Type: REG_MULTI_SZ, Length: 14, Data: fr-FR"
+"16:24:51,8195307","program2.exe","14636","RegCloseKey","HKCU\Control Panel\Desktop","SUCCESS",""
+"16:24:51,8196821","program2.exe","14636","RegCloseKey","HKCU","SUCCESS",""
+"16:24:51,8197602","program2.exe","14636","RegOpenKey","HKLM\Software\Policies\Microsoft\MUI\Settings","NAME NOT FOUND","Desired Access: Read"
+"16:24:51,8201620","program2.exe","14636","RegOpenKey","HKCU","SUCCESS","Desired Access: Maximum Allowed, Granted Access: All Access"
+"16:24:51,8204792","program2.exe","14636","RegOpenKey","HKCU\Software\Policies\Microsoft\Control Panel\Desktop","NAME NOT FOUND","Desired Access: Read"
+"16:24:51,8206975","program2.exe","14636","RegOpenKey","HKCU\Control Panel\Desktop\LanguageConfiguration","SUCCESS","Desired Access: Read"
+"16:24:51,8209274","program2.exe","14636","RegEnumValue","HKCU\Control Panel\Desktop\LanguageConfiguration","SUCCESS","Index: 0, Name: fr-FR, Type: REG_MULTI_SZ, Length: 14, Data: en-US"
+"16:24:51,8214875","program2.exe","14636","RegEnumValue","HKCU\Control Panel\Desktop\LanguageConfiguration","NO MORE ENTRIES","Index: 1, Length: 512"
+"16:24:51,8217113","program2.exe","14636","RegCloseKey","HKCU\Control Panel\Desktop\LanguageConfiguration","SUCCESS",""
+"16:24:51,8217858","program2.exe","14636","RegCloseKey","HKCU","SUCCESS",""
+"16:24:51,8221006","program2.exe","14636","RegOpenKey","HKLM\Software\Microsoft\Windows\CurrentVersion\SideBySide","SUCCESS","Desired Access: Read"
+"16:24:51,8224917","program2.exe","14636","RegQueryValue","HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide\PreferExternalManifest","NAME NOT FOUND","Length: 20"
+"16:24:51,8227073","program2.exe","14636","RegCloseKey","HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\SideBySide","SUCCESS",""
+"16:24:51,8229380","program2.exe","14636","CreateFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS","Desired Access: Generic Read, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,8254618","program2.exe","14636","CloseFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:24:51,8258643","program2.exe","14636","CloseFile","C:\gcc14\mingw64\bin\libmcfgthread-1.dll","SUCCESS",""
+"16:24:51,8276354","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Session Manager","REPARSE","Desired Access: Query Value"
+"16:24:51,8278024","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Session Manager","SUCCESS","Desired Access: Query Value"
+"16:24:51,8279562","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Session Manager\SmtDelaySleepLoopWindowSize","NAME NOT FOUND","Length: 80"
+"16:24:51,8283221","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Session Manager\SmtDelaySpinCountThreshold","NAME NOT FOUND","Length: 80"
+"16:24:51,8284042","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Session Manager\SmtDelayBaseYield","NAME NOT FOUND","Length: 80"
+"16:24:51,8286503","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Session Manager\SmtFactorYield","NAME NOT FOUND","Length: 80"
+"16:24:51,8290080","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Session Manager\SmtDelayMaxYield","NAME NOT FOUND","Length: 80"
+"16:24:51,8292474","program2.exe","14636","RegCloseKey","HKLM\System\CurrentControlSet\Control\Session Manager","SUCCESS",""
+"16:24:51,8296566","program2.exe","14636","QueryNameInformationFile","D:\MAI-year2\os\os_lab4\build\bin\program2.exe","SUCCESS","Name: \MAI-year2\os\os_lab4\build\bin\program2.exe"
+"16:24:51,8300105","program2.exe","14636","QueryOpen","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","CreationTime: 08/12/2025 15:12:06, LastAccessTime: 08/12/2025 16:22:38, LastWriteTime: 08/12/2025 15:12:06, ChangeTime: 08/12/2025 15:12:06, AllocationSize: 57 344, EndOfFile: 54 995, FileAttributes: A"
+"16:24:51,8303232","program2.exe","14636","CreateFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","Desired Access: Read Data/List Directory, Execute/Traverse, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,8304596","program2.exe","14636","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:24:51,8305407","program2.exe","14636","QueryBasicInformationFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","CreationTime: 08/12/2025 15:12:06, LastAccessTime: 08/12/2025 16:22:38, LastWriteTime: 08/12/2025 15:12:06, ChangeTime: 08/12/2025 15:12:06, FileAttributes: A"
+"16:24:51,8306691","program2.exe","14636","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:24:51,8308296","program2.exe","14636","QueryAttributeInformationVolume","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","FileSystemAttributes: Case Preserved, Case Sensitive, Unicode, ACLs, Compression, Named Streams, EFS, Object IDs, Reparse Points, Sparse Files, Quotas, Transactions, 0x3c02e00, MaximumComponentNameLength: 255, FileSystemName: NTFS"
+"16:24:51,8315673","program2.exe","14636","CreateFileMapping","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","FILE LOCKED WITH ONLY READERS","SyncType: SyncTypeCreateSection, PageProtection: PAGE_EXECUTE|PAGE_NOCACHE"
+"16:24:51,8318498","program2.exe","14636","CreateFileMapping","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","SyncType: SyncTypeOther"
+"16:24:51,8321820","program2.exe","14636","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:24:51,8322829","program2.exe","14636","QueryBasicInformationFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","CreationTime: 08/12/2025 15:12:06, LastAccessTime: 08/12/2025 16:22:38, LastWriteTime: 08/12/2025 15:12:06, ChangeTime: 08/12/2025 15:12:06, FileAttributes: A"
+"16:24:51,8323850","program2.exe","14636","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:24:51,8327278","program2.exe","14636","QueryAttributeInformationVolume","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","FileSystemAttributes: Case Preserved, Case Sensitive, Unicode, ACLs, Compression, Named Streams, EFS, Object IDs, Reparse Points, Sparse Files, Quotas, Transactions, 0x3c02e00, MaximumComponentNameLength: 255, FileSystemName: NTFS"
+"16:24:51,8329319","program2.exe","14636","CreateFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","Desired Access: Read Attributes, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:24:51,8332185","program2.exe","14636","CloseFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS",""
+"16:24:51,8334689","program2.exe","14636","QueryStreamInformationFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","0: ::$DATA"
+"16:24:51,8336107","program2.exe","14636","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","Control: FSCTL_READ_FILE_USN_DATA"
+"16:24:51,8339548","program2.exe","14636","Load Image","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS","Image Base: 0x7fff5d300000, Image Size: 0x16000"
+"16:24:51,8341680","program2.exe","14636","CloseFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib1.dll","SUCCESS",""
+"16:25:09,3100899","program2.exe","14636","QueryOpen","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","SUCCESS","CreationTime: 08/12/2025 14:54:04, LastAccessTime: 08/12/2025 15:44:01, LastWriteTime: 08/12/2025 14:54:04, ChangeTime: 08/12/2025 14:54:04, AllocationSize: 73 728, EndOfFile: 72 088, FileAttributes: A"
+"16:25:09,3102136","program2.exe","14636","CreateFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","SUCCESS","Desired Access: Read Data/List Directory, Execute/Traverse, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:25:09,3102918","program2.exe","14636","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:25:09,3104925","program2.exe","14636","QueryBasicInformationFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","SUCCESS","CreationTime: 08/12/2025 14:54:04, LastAccessTime: 08/12/2025 15:44:01, LastWriteTime: 08/12/2025 14:54:04, ChangeTime: 08/12/2025 14:54:04, FileAttributes: A"
+"16:25:09,3105571","program2.exe","14636","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:25:09,3105990","program2.exe","14636","QueryAttributeInformationVolume","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","SUCCESS","FileSystemAttributes: Case Preserved, Case Sensitive, Unicode, ACLs, Compression, Named Streams, EFS, Object IDs, Reparse Points, Sparse Files, Quotas, Transactions, 0x3c02e00, MaximumComponentNameLength: 255, FileSystemName: NTFS"
+"16:25:09,3108576","program2.exe","14636","CreateFileMapping","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","FILE LOCKED WITH ONLY READERS","SyncType: SyncTypeCreateSection, PageProtection: PAGE_EXECUTE|PAGE_NOCACHE"
+"16:25:09,3108955","program2.exe","14636","QueryStandardInformationFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","SUCCESS","AllocationSize: 73 728, EndOfFile: 72 088, NumberOfLinks: 1, DeletePending: False, Directory: False"
+"16:25:09,3110851","program2.exe","14636","ReadFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","SUCCESS","Offset: 0, Length: 72 088, I/O Flags: Non-cached, Paging I/O, Synchronous Paging I/O, Priority: Normal"
+"16:25:09,3245022","program2.exe","14636","CreateFileMapping","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","SUCCESS","SyncType: SyncTypeOther"
+"16:25:09,3246690","program2.exe","14636","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:25:09,3247524","program2.exe","14636","QueryBasicInformationFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","SUCCESS","CreationTime: 08/12/2025 14:54:04, LastAccessTime: 08/12/2025 15:44:01, LastWriteTime: 08/12/2025 14:54:04, ChangeTime: 08/12/2025 14:54:04, FileAttributes: A"
+"16:25:09,3248042","program2.exe","14636","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","INVALID DEVICE REQUEST","Control: 0x90390 (Device:0x9 Function:228 Method: 0)"
+"16:25:09,3248404","program2.exe","14636","QueryAttributeInformationVolume","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","SUCCESS","FileSystemAttributes: Case Preserved, Case Sensitive, Unicode, ACLs, Compression, Named Streams, EFS, Object IDs, Reparse Points, Sparse Files, Quotas, Transactions, 0x3c02e00, MaximumComponentNameLength: 255, FileSystemName: NTFS"
+"16:25:09,3249086","program2.exe","14636","QueryStreamInformationFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","SUCCESS","0: ::$DATA"
+"16:25:09,3250013","program2.exe","14636","FileSystemControl","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","SUCCESS","Control: FSCTL_READ_FILE_USN_DATA"
+"16:25:09,3250846","program2.exe","14636","Load Image","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","SUCCESS","Image Base: 0x7fff5d300000, Image Size: 0x17000"
+"16:25:09,3252518","program2.exe","14636","CloseFile","D:\MAI-year2\os\os_lab4\build\bin\mathlib2.dll","SUCCESS",""
+"16:25:22,5396828","program2.exe","14636","CreateFile","C:\Windows\System32\kernel.appcore.dll","SUCCESS","Desired Access: Read Attributes, Disposition: Open, Options: Open Reparse Point, Attributes: n/a, ShareMode: Read, Write, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:25:22,5398324","program2.exe","14636","QueryBasicInformationFile","C:\Windows\System32\kernel.appcore.dll","SUCCESS","CreationTime: 15/11/2025 17:03:49, LastAccessTime: 08/12/2025 16:25:14, LastWriteTime: 15/11/2025 17:03:49, ChangeTime: 01/12/2025 02:25:32, FileAttributes: A"
+"16:25:22,5398821","program2.exe","14636","CloseFile","C:\Windows\System32\kernel.appcore.dll","SUCCESS",""
+"16:25:22,5402521","program2.exe","14636","CreateFile","C:\Windows\System32\kernel.appcore.dll","SUCCESS","Desired Access: Read Data/List Directory, Execute/Traverse, Synchronize, Disposition: Open, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: n/a, ShareMode: Read, Delete, AllocationSize: n/a, OpenResult: Opened"
+"16:25:22,5404030","program2.exe","14636","CreateFileMapping","C:\Windows\System32\kernel.appcore.dll","FILE LOCKED WITH ONLY READERS","SyncType: SyncTypeCreateSection, PageProtection: PAGE_EXECUTE|PAGE_NOCACHE"
+"16:25:22,5406168","program2.exe","14636","CreateFileMapping","C:\Windows\System32\kernel.appcore.dll","SUCCESS","SyncType: SyncTypeOther"
+"16:25:22,5412608","program2.exe","14636","Load Image","C:\Windows\System32\kernel.appcore.dll","SUCCESS","Image Base: 0x7fff646b0000, Image Size: 0x1b000"
+"16:25:22,5417214","program2.exe","14636","Load Image","C:\Windows\System32\msvcrt.dll","SUCCESS","Image Base: 0x7fff67420000, Image Size: 0xa9000"
+"16:25:22,5419906","program2.exe","14636","CloseFile","C:\Windows\System32\kernel.appcore.dll","SUCCESS",""
+"16:25:22,5424826","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Nls\Sorting\Versions","REPARSE","Desired Access: Read"
+"16:25:22,5428176","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Control\Nls\Sorting\Versions","SUCCESS","Desired Access: Read"
+"16:25:22,5428583","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Nls\Sorting\Versions\(Default)","SUCCESS","Type: REG_SZ, Length: 18, Data: 00060502"
+"16:25:22,5431020","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Control\Nls\Sorting\Versions\000605xx","SUCCESS","Type: REG_SZ, Length: 26, Data: kernel32.dll"
+"16:25:22,5433870","program2.exe","14636","Thread Exit","","SUCCESS","Thread ID: 6544, User Time: 0.0156250, Kernel Time: 0.0312500"
+"16:25:22,5433968","program2.exe","14636","Thread Exit","","SUCCESS","Thread ID: 23512, User Time: 0.0156250, Kernel Time: 0.0156250"
+"16:25:22,5434524","program2.exe","14636","Thread Exit","","SUCCESS","Thread ID: 16620, User Time: 0.0000000, Kernel Time: 0.0312500"
+"16:25:22,5435574","program2.exe","14636","Thread Exit","","SUCCESS","Thread ID: 17872, User Time: 0.0312500, Kernel Time: 0.0000000"
+"16:25:22,5439544","program2.exe","14636","Process Exit","","SUCCESS","Exit Status: 0, User Time: 0.0625000 seconds, Kernel Time: 0.0781250 seconds, Private Bytes: 950 272, Peak Private Bytes: 950 272, Working Set: 5 050 368, Peak Working Set: 5 050 368"
+"16:25:22,5440160","program2.exe","14636","RegOpenKey","HKLM\System\CurrentControlSet\Services\bam\State\UserSettings\S-1-5-21-625758042-3719212902-3993367195-1001","SUCCESS","Desired Access: All Access"
+"16:25:22,5440865","program2.exe","14636","RegQueryValue","HKLM\System\CurrentControlSet\Services\bam\State\UserSettings\S-1-5-21-625758042-3719212902-3993367195-1001\\Device\HarddiskVolume7\MAI-year2\os\os_lab4\build\bin\program2.exe","NAME NOT FOUND","Length: 40"
+"16:25:22,5441255","program2.exe","14636","RegCloseKey","HKLM\System\CurrentControlSet\Services\bam\State\UserSettings\S-1-5-21-625758042-3719212902-3993367195-1001","SUCCESS",""
+"16:25:22,5442054","program2.exe","14636","RegCloseKey","HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options","SUCCESS",""
+"16:25:22,5442615","program2.exe","14636","CloseFile","D:\MAI-year2\os\os_lab4\build","SUCCESS",""
+"16:25:22,5444567","program2.exe","14636","RegCloseKey","HKLM\System\CurrentControlSet\Control\Session Manager","SUCCESS",""
+"16:25:22,5444850","program2.exe","14636","RegCloseKey","HKLM\System\CurrentControlSet\Control\Nls\Sorting\Versions","SUCCESS",""
+
+\end{verbatim}
